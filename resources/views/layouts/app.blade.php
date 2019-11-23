@@ -52,16 +52,16 @@
                 </button>
 
                 <!--costom nav-->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav dynamic-drop">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Aboutus</a>
+        <a class="nav-link" href="#">About&nbsp;us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Reportcrime</a>
+        <a class="nav-link" href="#">Report&nbsp;crime</a>
       </li>
       <li class="nav-item dropdown dropdown-alert">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,6 +76,11 @@
       </li>
     </ul>
   </div>
+
+
+
+
+
 
 <script type="text/javascript">
 $('li.dropdown-alert').hover(function() {
