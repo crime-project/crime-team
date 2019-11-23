@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -41,14 +41,58 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+               <!-- <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
-                </a>
+                </a>-->
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!--costom nav-->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav dynamic-drop">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Aboutus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reportcrime</a>
+      </li>
+      <li class="nav-item dropdown dropdown-alert">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Alerts
+        </a>
+        <div class="dropdown-menu bg-light shadow-sm" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Missing persons</a>
+          <a class="dropdown-item" href="#">Missing Items</a>
+          <a class="dropdown-item" href="#">Missing vehical</a>
+           <a class="dropdown-item" href="#">Most wanted criminals</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+<script type="text/javascript">
+$('li.dropdown-alert').hover(function() {
+  $(this).find('.dynamic-drop').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dynamic-drop').stop(true, true).delay(200).fadeOut(500);
+});
+</script>
+
+
+
+
+                <!--costom nav end-->
+
+
+
+
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
