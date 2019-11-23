@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class Crimecontroller extends Controller
 {
-    public function()
+    public function dashboard()
     {
-        fffff
+        return view('dashboard');
     }
 }
