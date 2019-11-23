@@ -11,5 +11,10 @@ main.dashboard{
 
 .Missing-person{
 	    background-color: #e4e7e8 !important;
-	        padding-top: 30px !important;
+	      
+}
+
+
+.missing-person-container{
+	   padding-top: 25px !important;
 }
