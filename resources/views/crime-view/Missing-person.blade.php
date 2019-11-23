@@ -96,10 +96,11 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-9">
-                               <button type="button" class="btn btn-info rounded">
+                         
+                  <h4><button type="button" class="btn btn-info rounded">
 
                                     {{ __('Submit') }}
-                                </button>
+                                </button></h4>
                             </div>
                         </div>
                     </form>

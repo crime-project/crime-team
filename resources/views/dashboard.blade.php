@@ -24,7 +24,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-male"></i>Missing persons</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-plus"></i><a href="ui-buttons.html">Add</a></li>
+                            <li><i class="fa fa-plus"></i><a href="missing-persons">Add</a></li>
                             <li><i class="fa fa-eye"></i><a href="ui-badges.html">View</a></li>
                            
                         </ul>
