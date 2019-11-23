@@ -23,6 +23,8 @@
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
+    <link rel="stylesheet" href="assets/css/custom.css">
+
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
@@ -141,7 +143,7 @@ $('li.dropdown-alert').hover(function() {
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 dashboard">
             @yield('content')
         </main>
     </div>

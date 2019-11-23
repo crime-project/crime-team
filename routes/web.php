@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/dashboard', 'Crimecontroller@dashboard');
+
+Route::get('/missing-persons', 'Crimecontroller@persons');
