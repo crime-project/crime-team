@@ -20,6 +20,11 @@ class Crimecontroller extends Controller
     {
      	 return view('crime-view.Missing-vehicle');   
 	}
+
+         public function items()
+    {
+         return view('crime-view.Missing-item');   
+    }
 }
     
        

@@ -32,14 +32,14 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Missing Items</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-plus"></i><a href="tables-basic.html">Add</a></li>
+                            <li><i class="fa fa-plus"></i><a href="missing-items">Add</a></li>
                             <li><i class="fa fa-eye"></i><a href="tables-data.html">View</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-car"></i> Missing Vehicals</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-car"></i> Missing Vehicles</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-plus"></i><a href="">Add</a></li>
+                            <li><i class="menu-icon fa fa-plus"></i><a href="missing-vehicles">Add</a></li>
                             <li><i class="menu-icon fa fa-eye"></i><a href="forms-advanced.html">View</a></li>
                         </ul>
                     </li>
@@ -92,7 +92,7 @@
 <!-- Left Panel -->
 
 <!-- Right Panel -->
-<div class="col-lg-8">  
+<div class="col-lg-8"> 
    <!--<div id="right-panel" class="right-panel">-->
 
     <div class="container-fluid missing-person-container">
