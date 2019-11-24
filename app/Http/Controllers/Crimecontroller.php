@@ -12,9 +12,14 @@ class Crimecontroller extends Controller
     }
 
      public function persons()
-     {
+    {
      	 return view('crime-view.Missing-person');   
+	}
+
+	 public function vehicles()
+    {
+     	 return view('crime-view.Missing-vehicle');   
+	}
 }
-     }
     
        
