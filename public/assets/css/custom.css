@@ -14,7 +14,7 @@ main.dashboard{
 	      
 }
 
-
-.missing-person-container{
+.missing-person-container, .missing-vechicle-container{
 	   padding-top: 25px !important;
 }
+
