@@ -10,7 +10,8 @@ main.dashboard{
 }
 
 .Missing-person{
-	    background-color: #e4e7e8 !important;
+	   /* background-color: #e4e7e8 !important; */
+	   background-color: #ffffff !important;
 	      
 }
 
@@ -20,4 +21,7 @@ main.dashboard{
 
 .dashboard-panal{
 	padding-left: 0px !important; 
+}
+.card-body .text-md-right{
+	font-weight: 600 !important;
 }
