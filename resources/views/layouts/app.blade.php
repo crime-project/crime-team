@@ -149,7 +149,6 @@ $('li.dropdown-alert').hover(function() {
     </div>
 
 <!--dashboaed-js-links->
-
 <!-- Right Panel -->
 
     <script src="vendors/jquery/dist/jquery.min.js"></script>
