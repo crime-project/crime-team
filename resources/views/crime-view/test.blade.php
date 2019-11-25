@@ -3,8 +3,6 @@
 @section('content')
 
 
-@include('layouts.dash-panal')
-
 <!-- Right Panel -->
 <div class="col-lg-8">  
  <!--<div id="right-panel" class="right-panel">-->
@@ -17,14 +15,14 @@
 
                 <div class="card-body">
                     <form method="POST" action="http://127.0.0.1:8000/register">
-                        <input type="hidden" name="_token" value="yV21wMIYxCTasrhiPledHtezmlYqERn0aoJHCXkl">
+                        
+                        <hr size="3">
                         <div class="form-group row">
+
                             <label for="name" class="col-md-4 col-form-label text-md-right">Full name </label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control " name="name" value="" required="" autocomplete="name" autofocus="">
-
-
                             </div>
                         </div>
 
@@ -117,12 +115,5 @@
 </div>
 
 <!--</div>-->
-</div><!-- /#right-panel -->
-
-
-<script src="vendors/jquery/dist/jquery.min.js"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-</main>
 </div>
-
 @endsection
