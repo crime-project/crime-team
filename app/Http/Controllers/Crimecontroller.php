@@ -30,7 +30,10 @@ class Crimecontroller extends Controller
     {
          return view('crime-view.Missing-person-table');   
     }
-
+     public function personui()
+    {
+         return view('crime-view.Missing-person-ui');   
+    }
 
 }
     
