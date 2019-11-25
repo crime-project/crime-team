@@ -25,6 +25,13 @@ class Crimecontroller extends Controller
     {
          return view('crime-view.Missing-item');   
     }
+
+    public function persontable()
+    {
+         return view('crime-view.Missing-person-table');   
+    }
+
+
 }
     
        

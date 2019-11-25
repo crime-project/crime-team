@@ -36,9 +36,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-
 <!--dashboaed links-end-->
 
+
+<!--table-style-links-->
+
+ <!-- <link rel="stylesheet" href="admin/css/bootstrap.min.css">-->
+<!--table-style-links-->
 
 </head>
 <body>
@@ -166,5 +170,6 @@ $('li.dropdown-alert').hover(function() {
 
 <!--dashboaed-js-links-end-->
  <script src="{{ asset('js/app.js') }}" defer></script>
+
 </body>
 </html>
