@@ -31,6 +31,11 @@ class Crimecontroller extends Controller
      	 return view('crime-view.Missing-vehicle');   
 	}
 
+         public function vehiclestable()
+    {
+         return view('crime-view.Missing-vehicles-table');   
+    }
+
          public function items()
     {
          return view('crime-view.Missing-item');   
