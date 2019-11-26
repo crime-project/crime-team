@@ -155,8 +155,8 @@
     <div class="modal-content">
       <div class="modal-header">
 
-        <h4 class="modal-title">Modal Header</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Please Help Us to Find !</h4>
+        <button type="button" class="close bg-danger" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Right Panel -->
@@ -167,7 +167,7 @@
 
           <!--<div class="col-12">-->
             <div class="card Missing-person">
-              <h4><strong><div class="card-header text-center bg-info">Missing Persons</div></strong></h4>
+              <h4><strong><div class="card-header text-center bg-secondary text-light">Missing Person</div></strong></h4>
 
               <div class="card-body">
                 <form method="POST" action="http://127.0.0.1:8000/register">
@@ -208,6 +208,16 @@
 
                   </div>
                 </div>
+                    
+                   <div class="form-group row">
+                  <label for="email" class="col-md-2">NIC No</label>
+
+                  <div class="col-md-8">
+                    <input id="email" type="email" class="form-control bg-light" name="email" value="" required="" autocomplete="email" disabled>
+
+
+                  </div>
+                </div>
 
                
 
@@ -237,13 +247,13 @@
                 </div>
 
 
-                <div class="form-group row float-right">
+                <!--<div class="form-group row float-right">
 
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
 
-                </div>
+                </div>-->
               </form>
             </div>
           </div>
