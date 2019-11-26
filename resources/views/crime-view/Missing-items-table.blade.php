@@ -40,9 +40,10 @@
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>Full name</th>
+									<th>Full Name</th>
+									<th>Item Name</th>
 									<th>Address</th>
-									<th>Phone Number </th>
+									<th>Phone Number</th>
 									<th>Image</th>
 									<th>Description</th>
 									<th>Action</th>
@@ -50,10 +51,10 @@
 							</thead>
 							<tfoot>
 								<tr>
-									<th>#</th>
-									<th>Full name</th>
+									<th>Full Name</th>
+									<th>Item Name</th>
 									<th>Address</th>
-									<th>Phone Number </th>
+									<th>Phone Number</th>
 									<th>Image</th>
 									<th>Description</th>
 									<th>Action</th>
