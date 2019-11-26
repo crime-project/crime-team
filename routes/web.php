@@ -27,7 +27,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/missing-persons', 'Crimecontroller@persons');
 Route::get('/missing-vehicles', 'Crimecontroller@vehicles');
+
 Route::get('/missing-items', 'Crimecontroller@items');
+
+Route::get('/missing-items-table', 'Crimecontroller@itemstable');
 
 Route::get('/Missing-person-table', 'Crimecontroller@persontable');
 

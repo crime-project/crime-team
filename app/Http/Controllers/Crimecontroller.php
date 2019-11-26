@@ -16,6 +16,16 @@ class Crimecontroller extends Controller
      	 return view('crime-view.Missing-person');   
 	}
 
+        public function persontable()
+    {
+         return view('crime-view.Missing-person-table');   
+    }
+     public function personui()
+    {
+         return view('crime-view.Missing-person-ui');   
+    }
+
+
 	 public function vehicles()
     {
      	 return view('crime-view.Missing-vehicle');   
@@ -26,14 +36,11 @@ class Crimecontroller extends Controller
          return view('crime-view.Missing-item');   
     }
 
-    public function persontable()
+        public function itemstable()
     {
-         return view('crime-view.Missing-person-table');   
+         return view('crime-view.Missing-items-table');   
     }
-     public function personui()
-    {
-         return view('crime-view.Missing-person-ui');   
-    }
+
 
 }
     
