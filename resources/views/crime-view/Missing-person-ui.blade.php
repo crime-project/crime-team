@@ -5,8 +5,8 @@
 
 <div class="container">
 
- <h5 class="header text-center p-3">Missing persons</h5>
- <div class="row p-3 border border-dark">
+ <h5 class="header text-center p-3">Missing Persons</h5>
+<div class="row p-3">
 
 
 
@@ -76,7 +76,7 @@
 
 
 <hr class="mt-4 mb-4">
-<div class="row p-3 border border-dark">
+<div class="row p-3">
 
   <div class="col-sm p-3">
 

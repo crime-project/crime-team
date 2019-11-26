@@ -27,9 +27,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/missing-persons', 'Crimecontroller@persons');
 
-Route::get('/Missing-person-table', 'Crimecontroller@persontable');
+Route::get('/missing-person-table', 'Crimecontroller@persontable');
 
-Route::get('/Missing-person-ui', 'Crimecontroller@personui');
+Route::get('/missing-person-ui', 'Crimecontroller@personui');
 
 Route::get('/missing-items', 'Crimecontroller@items');
 

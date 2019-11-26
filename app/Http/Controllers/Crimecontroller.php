@@ -13,37 +13,37 @@ class Crimecontroller extends Controller
 
      public function persons()
     {
-     	 return view('crime-view.Missing-person');   
+     	 return view('crime-view.missing-person');   
 	}
 
         public function persontable()
     {
-         return view('crime-view.Missing-person-table');   
+         return view('crime-view.missing-person-table');   
     }
      public function personui()
     {
-         return view('crime-view.Missing-person-ui');   
+         return view('crime-view.missing-person-ui');   
     }
 
 
 	 public function vehicles()
     {
-     	 return view('crime-view.Missing-vehicle');   
+     	 return view('crime-view.missing-vehicle');   
 	}
 
          public function vehiclestable()
     {
-         return view('crime-view.Missing-vehicles-table');   
+         return view('crime-view.missing-vehicles-table');   
     }
 
          public function items()
     {
-         return view('crime-view.Missing-item');   
+         return view('crime-view.missing-item');   
     }
 
         public function itemstable()
     {
-         return view('crime-view.Missing-items-table');   
+         return view('crime-view.missing-items-table');   
     }
 
 

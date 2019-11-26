@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Crime') }}</title>
 
     <!-- Scripts -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -74,10 +74,10 @@
           Alerts
         </a>
         <div class="dropdown-menu bg-light shadow-sm" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Missing persons</a>
+          <a class="dropdown-item" href="#">Missing Persons</a>
           <a class="dropdown-item" href="#">Missing Items</a>
-          <a class="dropdown-item" href="#">Missing vehical</a>
-           <a class="dropdown-item" href="#">Most wanted criminals</a>
+          <a class="dropdown-item" href="#">Missing Vehicles</a>
+           <a class="dropdown-item" href="#">Most Wanted Criminals</a>
         </div>
       </li>
     </ul>
