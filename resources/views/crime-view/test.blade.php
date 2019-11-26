@@ -16,21 +16,26 @@
                 <div class="card-body">
                     <form method="POST" action="http://127.0.0.1:8000/register">
                         
-                        <hr size="3">
+                        
                         <div class="form-group row">
 
                             <label for="name" class="col-md-4 col-form-label text-md-right">Full name </label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control " name="name" value="" required="" autocomplete="name" autofocus="">
+                               <br>
+                                <hr class="style1" style="color:blue;">
+                                <br>
                             </div>
+                                
+                                
+
                         </div>
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control " name="email" value="" required="" autocomplete="email">
+                                <input id="email" type="email" class="form-control bg-light" name="email" value="" required="" autocomplete="email" disabled>
 
 
                             </div>
@@ -98,15 +103,7 @@
 
 
 
-              <div class="form-group row mb-0">
-                <div class="col-md-6 offset-md-9">
-
-                  <h4><button type="button" class="btn btn-info rounded">
-
-                    Submit
-                </button></h4>
-            </div>
-        </div>
+              
     </form>
 </div>
 </div>
@@ -116,4 +113,7 @@
 
 <!--</div>-->
 </div>
+
+
+
 @endsection
