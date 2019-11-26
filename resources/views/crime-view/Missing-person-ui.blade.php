@@ -36,7 +36,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
       </div>
     </div>
 
@@ -51,7 +51,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
       </div>
     </div>
 
@@ -65,7 +65,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
       </div>
     </div>
 
@@ -87,7 +87,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
       </div>
     </div>
 
@@ -102,7 +102,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">View more</button>
       </div>
     </div>
 
@@ -172,110 +172,91 @@
               <div class="card-body">
                 <form method="POST" action="http://127.0.0.1:8000/register">
                   <input type="hidden" name="_token" value="yV21wMIYxCTasrhiPledHtezmlYqERn0aoJHCXkl">
-                  <div class="form-group row">
-                    <label for="name" class="col-md-4 col-form-label text-md-right">Full name </label>
-
-                    <div class="col-md-6">
-                      <input id="name" type="text" class="form-control " name="name" value="" required="" autocomplete="name" autofocus="">
 
 
-                    </div>
-                  </div>
+                     <div class="form-group row">
+                  <label for="password" class="col-md-4 col-form-label text-md-right"></label>
+                  <div class="col-sm-4 p-3">
 
-                  <div class="form-group row">
-                    <label for="email" class="col-md-4 col-form-label text-md-right">Address</label>
+                    <div class="card">
 
-                    <div class="col-md-6">
-                      <input id="email" type="email" class="form-control " name="email" value="" required="" autocomplete="email">
-
+                      <img class="card-img-top" src="/assets/images/u1.png" alt="Card image cap">
 
                     </div>
                   </div>
+                </div>
 
-                  <div class="form-group row">
-                    <label for="password" class="col-md-4 col-form-label text-md-right">Phone Number</label>
-
-                    <div class="col-md-6">
-                      <input id="password" type="password" class="form-control " name="password" required="" autocomplete="new-password">
-
-
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Gender</label>
-
-                    <div class="col-md-6">
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label" for="defaultInline1">Male</label>
-                      </div>
-
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-                        <label class="custom-control-label" for="defaultInline2">Female</label>
-                      </div>
-                    </div>
-                  </div>
 
 
 
                   <div class="form-group row">
-                    <label for="password" class="col-md-4 col-form-label text-md-right">Image</label>
+                    <label for="name" class="col-md-2">Full name </label>
 
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                        </div>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                        </div>
-                      </div>
+                    <div class="col-md-8">
+                     <input id="email" type="email" class="form-control bg-light" name="email" value="" required="" autocomplete="email" disabled>
 
 
+                   </div>
+                 </div>
+
+                 <div class="form-group row">
+                  <label for="email" class="col-md-2">Address</label>
+
+                  <div class="col-md-8">
+                    <input id="email" type="email" class="form-control bg-light" name="email" value="" required="" autocomplete="email" disabled>
+
+
+                  </div>
+                </div>
+
+               
+
+                <div class="form-group row">
+                <!--  <label for="password" class="col-md-4 col-form-label text-md-right ">Description</label>-->
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                       <label for="password" class="">Description</label>
+                     <textarea class="form-control bg-light" id="exampleFormControlTextarea3" rows="7" disabled></textarea>
                     </div>
+
+                  </div>
+                </div>
+
+
+                 <div class="form-group row">
+                <!--  <label for="password" class="col-md-4 col-form-label text-md-right ">Description</label>-->
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <h4><label for="password" class="">If any clue call this number - 072-222555</label></h4>
+                    
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div class="form-group row float-right">
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
 
-
-
-                  <div class="form-group row">
-                    <label for="password" class="col-md-4 col-form-label text-md-right">Description</label>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-
-                        <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
-                      </div>
-
-                    </div>
-                  </div>
-
-
-
-                  <div class="form-group row mb-0">
-                    <div class="col-md-6 offset-md-9">
-
-                      <h4><button type="button" class="btn btn-info rounded">
-
-                        Submit
-                      </button></h4>
-                    </div>
-                  </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
-           
-
           </div>
+
 
         </div>
 
-
       </div>
+
+
     </div>
-  </div>-
+  </div>
+</div>
 
 
 
