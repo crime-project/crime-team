@@ -20,11 +20,11 @@ class Crimecontroller extends Controller
     {
          return view('crime-view.missing-person-table');   
     }
+
      public function personui()
     {
          return view('crime-view.missing-person-ui');   
     }
-
 
 	 public function vehicles()
     {
@@ -36,6 +36,11 @@ class Crimecontroller extends Controller
          return view('crime-view.missing-vehicles-table');   
     }
 
+     public function vehicleui()
+    {
+         return view('crime-view.missing-vehicle-ui');   
+    }
+    
          public function items()
     {
          return view('crime-view.missing-item');   
@@ -45,7 +50,10 @@ class Crimecontroller extends Controller
     {
          return view('crime-view.missing-items-table');   
     }
-
+     public function itemui()
+    {
+         return view('crime-view.missing-item-ui');   
+    }
 
 }
     

@@ -5,12 +5,12 @@
 
 <div class="container">
 
- <h5 class="header text-center p-3">Missing Items</h5>
- <div class="row p-3">
+ <h5 class="header text-center p-3">Missing Vehicles</h5>
+<div class="row p-3">
 
 
 
- <div class="col-sm p-3">
+  <div class="col-sm p-3">
 
     <div class="card">
       <h5 class="card-header text-center">Featured</h5>
@@ -179,11 +179,11 @@
       <div class="col-lg-12">  
        <!--<div id="right-panel" class="right-panel">-->
 
-        <div class="container-fluid missing-item-container">
+        <div class="container-fluid missing-vehicle-container">
 
           <!--<div class="col-12">-->
-            <div class="card missing-item">
-              <h4><strong><div class="card-header text-center bg-secondary text-light">Missing Item</div></strong></h4>
+            <div class="card missing-vehicle">
+              <h4><strong><div class="card-header text-center bg-secondary text-light">Missing Vehicle</div></strong></h4>
 
               <div class="card-body">
                 <form method="POST" action="http://127.0.0.1:8000/register">
@@ -196,7 +196,7 @@
 
                     <div class="card">
 
-                      <img class="card-img-top" src="/assets/images/item.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="/assets/images/cars.jpg" alt="Card image cap">
 
                     </div>
                   </div>
@@ -204,7 +204,7 @@
 
 
                   <div class="form-group row">
-                    <label for="name" class="col-md-2">Full Name </label>
+                    <label for="name" class="col-md-2">Owner Name </label>
 
                     <div class="col-md-8">
                      <input id="own_name" type="text" class="form-control bg-light" name="own_name" value="" required="" autocomplete="own_name" disabled>
@@ -214,20 +214,20 @@
                  </div>
 
                   <div class="form-group row">
-                    <label for="item_name" class="col-md-2">Item Name </label>
+                    <label for="mod_number" class="col-md-2">Model Number </label>
 
                     <div class="col-md-8">
-                     <input id="item_name" type="text" class="form-control bg-light" name="item_name" value="" required="" autocomplete="item_name" disabled>
+                     <input id="mod_number" type="number" class="form-control bg-light" name="mod_number" value="" required="" autocomplete="mod_number" disabled>
 
 
                    </div>
                  </div>
 
                   <div class="form-group row">
-                    <label for="phone_number" class="col-md-2">Phone Number </label>
+                    <label for="num_plate" class="col-md-2">Number Plate </label>
 
                     <div class="col-md-8">
-                     <input id="phone_number" type="number" class="form-control bg-light" name="phone_number" value="" required="" autocomplete="phone_number" disabled>
+                     <input id="num_plate" type="number" class="form-control bg-light" name="num_plate" value="" required="" autocomplete="num_plate" disabled>
 
 
                    </div>

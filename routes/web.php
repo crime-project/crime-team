@@ -35,6 +35,10 @@ Route::get('/missing-items', 'Crimecontroller@items');
 
 Route::get('/missing-items-table', 'Crimecontroller@itemstable');
 
+Route::get('/missing-item-ui', 'Crimecontroller@itemui');
+
 Route::get('/missing-vehicles', 'Crimecontroller@vehicles');
 
 Route::get('/missing-vehicles-table', 'Crimecontroller@vehiclestable');
+
+Route::get('/missing-vehicle-ui', 'Crimecontroller@vehicleui');
