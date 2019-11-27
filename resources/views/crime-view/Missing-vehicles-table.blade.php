@@ -14,7 +14,7 @@
 
 				<!-- Zero Configuration Table -->
 				<div class="panel panel-default">
-					<div class="panel-heading">Item Details</div>
+					<div class="panel-heading">Vehicle Details</div>
 					<div class="panel-body">
 
 						<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
@@ -52,6 +52,7 @@
 							</thead>
 							<tfoot>
 								<tr>
+									<th></th>
 									<th>Owner Name</th>
 									<th>Model Number</th>
 									<th>Number Plate</th>
@@ -73,12 +74,14 @@
 								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>
+								<td>Brand </td>
 								<td><a href=""><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 									<a href="" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 								</tr>
 
 								<tr>
 								<td></td>
+								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>

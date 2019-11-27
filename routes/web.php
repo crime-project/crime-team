@@ -26,12 +26,15 @@ Route::get('/', 'Crimecontroller@dashboard');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/missing-persons', 'Crimecontroller@persons');
-Route::get('/missing-vehicles', 'Crimecontroller@vehicles');
+
+Route::get('/missing-person-table', 'Crimecontroller@persontable');
+
+Route::get('/missing-person-ui', 'Crimecontroller@personui');
 
 Route::get('/missing-items', 'Crimecontroller@items');
 
 Route::get('/missing-items-table', 'Crimecontroller@itemstable');
 
-Route::get('/Missing-person-table', 'Crimecontroller@persontable');
+Route::get('/missing-vehicles', 'Crimecontroller@vehicles');
 
-Route::get('/Missing-person-ui', 'Crimecontroller@personui');
+Route::get('/missing-vehicles-table', 'Crimecontroller@vehiclestable');

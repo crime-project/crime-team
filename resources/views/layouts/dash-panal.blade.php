@@ -14,29 +14,29 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="/dashboard"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                        <a href="/"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
                     <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-male"></i>Missing persons</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-plus"></i><a href="missing-persons">Add</a></li>
-                            <li><i class="fa fa-eye"></i><a href="ui-badges.html">View</a></li>
+                            <li><i class="fa fa-eye"></i><a href="missing-person-table">View</a></li>
 
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Missing Items</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-plus"></i><a href="tables-basic.html">Add</a></li>
-                            <li><i class="fa fa-eye"></i><a href="tables-data.html">View</a></li>
+                            <li><i class="fa fa-plus"></i><a href="missing-items">Add</a></li>
+                            <li><i class="fa fa-eye"></i><a href="missing-items-table">View</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-car"></i> Missing Vehicles</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-plus"></i><a href="">Add</a></li>
-                            <li><i class="menu-icon fa fa-eye"></i><a href="forms-advanced.html">View</a></li>
+                            <li><i class="menu-icon fa fa-plus"></i><a href="missing-vehicles">Add</a></li>
+                            <li><i class="menu-icon fa fa-eye"></i><a href="missing-vehicles-table">View</a></li>
                         </ul>
                     </li>
 
