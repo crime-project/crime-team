@@ -109,15 +109,58 @@
                 </button></h4>
             </div>
         </div>
+
+
+ <div class="container">
+    <div class="row">
+        <div class='col-sm-4'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1' name="datetimepicker1">
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+          /*  $(function () {
+                $('#datetimepicker1').datetimepicker();
+            }); */
+
+             jQuery(function () {
+    $('#datetimepicker1').datetimepicker({
+        defaultDate: moment(),
+        sideBySide: true
+        });
+});
+
+</script>
+    </div>
+</div>
+
+
+
     </form>
 </div>
 </div>
 <!-- </div>-->
 
+
+
+
+
+
+
+
 </div>
 
-<!--</div>-->
-</div><!-- /#right-panel -->
+
+
+
+
+
+</div>
 
 
 <script src="vendors/jquery/dist/jquery.min.js"></script>
