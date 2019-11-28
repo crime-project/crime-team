@@ -43,6 +43,13 @@
                             <li><i class="menu-icon fa fa-eye"></i><a href="missing-vehicle-table">View</a></li>
                         </ul>
                     </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-car"></i> Most Wanted Criminals</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-plus"></i><a href="missing-vehicles">Add</a></li>
+                            <li><i class="menu-icon fa fa-eye"></i><a href="missing-vehicle-table">View</a></li>
+                        </ul>
+                    </li>
 
                          <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i> Registered users</a>

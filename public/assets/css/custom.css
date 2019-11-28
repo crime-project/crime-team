@@ -9,13 +9,13 @@ main.dashboard{
 	padding-top: 0px !important;
 }
 
-.Missing-person, .missing-vehicle{
+.Missing-person, .missing-vehicle, .missing-item, .most-wanted-criminal{
 	   /* background-color: #e4e7e8 !important; */
 	   background-color: #ffffff !important;
 	      
 }
 
-.missing-person-container, .missing-vechicle-container, .missing-item-container{
+.missing-person-container, .missing-vechicle-container, .missing-item-container, .most-wanted-criminals-container{
 	   padding-top: 25px !important;
 }
 
