@@ -55,6 +55,15 @@ class Crimecontroller extends Controller
          return view('crime-view.missing-item-ui');   
     }
 
+     public function registereduser()
+    {
+         return view('crime-view.registered-user-table');   
+    }
+    public function criminal()
+    {
+         return view('crime-view.most-wanted-criminals-table');   
+    }
+
+
 }
-    
        

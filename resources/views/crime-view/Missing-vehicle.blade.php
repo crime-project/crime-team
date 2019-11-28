@@ -6,14 +6,8 @@
 
 <!-- Right Panel -->
 <div class="col-lg-8"> 
-   <!--<div id="right-panel" class="right-panel">-->
 
-    <div class="container-fluid missing-person-container">
-
-        <!--<div class="col-12">-->
-          <div class="container missing-vechicle-container">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
+    <div class="container-fluid missing-person-container">       
                     <div class="card Missing-vechicle">
                         <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Vehicles') }}</div></strong></h4>
 
@@ -118,9 +112,7 @@
                 </form>
             </div>
         </div>
-    </div>
-</div>
-</div>
+
 <!-- </div>-->
 
 </div>

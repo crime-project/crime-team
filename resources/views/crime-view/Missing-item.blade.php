@@ -10,10 +10,10 @@
 
     <div class="container-fluid missing-item-container">
 
-        <!--<div class="col-12">-->
-          <div class="container missing-item-container">
-            <div class="row justify-content-center">
-                <div class="col-md-10">
+  <!-- <div class="col-12">-->
+         <!--  <div class="container missing-item-container">-->
+            <!-- <div class="row justify-content-center">-->
+                 <!--<div class="col-md-10">-->
                     <div class="card Missing-item">
                         <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items') }}</div></strong></h4>
 
@@ -103,16 +103,12 @@
                         </div>
                     </div>
                 </form>
-            </div>
-        </div>
-    </div>
+         <!--   </div>-->
+        <!-- </div>-->
+   <!-- </div>-->
 </div>
 </div>
-<!-- </div>-->
-
 </div>
-
-<!--</div>-->
 </div><!-- /#right-panel -->
 
 

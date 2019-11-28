@@ -40,18 +40,18 @@
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-mask"></i> Most Wanted Criminals</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-id-card"></i> Most Wanted Criminals</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-plus"></i><a href="missing-vehicles">Add</a></li>
-                            <li><i class="menu-icon fa fa-eye"></i><a href="missing-vehicle-table">View</a></li>
+                            <li><i class="menu-icon fa fa-eye"></i><a href="most-wanted-criminals-table">View</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i> Registered users</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-plus"></i><a href="forms-basic.html">Add</a></li>
-                            <li><i class="menu-icon fa fa-eye"></i><a href="forms-advanced.html">View</a></li>
+                           
+                            <li><i class="menu-icon fa fa-eye"></i><a href="registered-user-table">View</a></li>
                         </ul>
                     </li>
 
