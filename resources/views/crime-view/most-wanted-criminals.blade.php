@@ -38,44 +38,14 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="mod_number" class="col-md-4 col-form-label text-md-right">{{ __('Model Number ') }}</label>
-
-                                    <div class="col-md-6">
-                                        <input id="mod_number" type="number" class="form-control @error('mod_number') is-invalid @enderror" name="mod_number" value="{{ old('mod_number') }}" required autocomplete="mod_number" autofocus>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label for="num_plate" class="col-md-4 col-form-label text-md-right">{{ __('Number Plate') }}</label>
-
-                                    <div class="col-md-6">
-                                        <input id="num_plate" type="number" class="form-control @error('num_plate') is-invalid @enderror" name="email" value="{{ old('num_plate') }}" required autocomplete="num_plate">
-
-                                        
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
                                     <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('address') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="address" type="email" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="email">
+                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="email">
 
                                         
                                     </div>
                                 </div>
-
-
-                                <div class="form-group row">
-                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
-
-                                    <div class="col-md-6">
-                                        <input id="phone_number" type="tel" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" required autocomplete="phone_number">
-
-                                        
-                                    </div>
-                                </div>
-
 
 
                                 <div class="form-group row">

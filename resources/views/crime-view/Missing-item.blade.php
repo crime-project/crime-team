@@ -14,26 +14,27 @@
          <!--  <div class="container missing-item-container">-->
             <!-- <div class="row justify-content-center">-->
                  <!--<div class="col-md-10">-->
-                    <div class="card Missing-item">
+                    <div class="card missing-item">
                         <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items') }}</div></strong></h4>
 
                         <div class="card-body">
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
 
+
                                 <div class="form-group row">
-                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Full Name ') }}</label>
+                                    <label for="item_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Name ') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="full_name" type="text" class="form-control @error('full_name') is-invalid @enderror" name="full_name" value="{{ old('full_name') }}" required autocomplete="full_name" autofocus>
+                                        <input id="item_name" type="text" class="form-control @error('item_name') is-invalid @enderror" name="item_name" value="{{ old('item_name') }}" required autocomplete="item_name" autofocus>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Item Name ') }}</label>
+                                    <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="item_name" type="text" class="form-control @error('item_name') is-invalid @enderror" name="item_name" value="{{ old('item_name') }}" required autocomplete="item_name" autofocus>
+                                        <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_own_name" value="{{ old('item_own_name') }}" required autocomplete="item_own_name" autofocus>
                                     </div>
                                 </div>
 

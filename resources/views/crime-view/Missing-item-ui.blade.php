@@ -242,18 +242,7 @@
 
                   </div>
                 </div>
-                    
-                  <div class="form-group row">
-                    <label for="phone_number" class="col-md-2">Phone Number </label>
 
-                    <div class="col-md-8">
-                     <input id="phone_number" type="number" class="form-control bg-light" name="phone_number" value="" required="" autocomplete="phone_number" disabled>
-
-
-                   </div>
-                 </div>
-
-               
 
                 <div class="form-group row">
                 <!--  <label for="password" class="col-md-4 col-form-label text-md-right ">Description</label>-->

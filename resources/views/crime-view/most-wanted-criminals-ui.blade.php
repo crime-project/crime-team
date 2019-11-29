@@ -182,7 +182,7 @@
         <div class="container-fluid most-wanted-criminals-container">
 
           <!--<div class="col-12">-->
-            <div class="card missing-vehicle">
+            <div class="card most-wanted-criminals">
               <h4><strong><div class="card-header text-center bg-secondary text-light">Most Wanted Criminals</div></strong></h4>
 
               <div class="card-body">
@@ -204,27 +204,27 @@
 
 
                   <div class="form-group row">
-                    <label for="name" class="col-md-2">Full Name </label>
+                    <label for="cri_full_name" class="col-md-2">Full Name </label>
 
                     <div class="col-md-8">
-                     <input id="own_name" type="text" class="form-control bg-light" name="own_name" value="" required="" autocomplete="own_name" disabled>
+                     <input id="cri_full_name" type="text" class="form-control bg-light" name="cri_full_name" value="" required="" autocomplete="cri_full_name" disabled>
 
 
                    </div>
                  </div>
 
                   <div class="form-group row">
-                    <label for="name" class="col-md-2">Other Names </label>
+                    <label for="other_names" class="col-md-2">Other Names </label>
 
                     <div class="col-md-8">
-                     <input id="own_name" type="text" class="form-control bg-light" name="own_name" value="" required="" autocomplete="own_name" disabled>
+                     <input id="other_names" type="text" class="form-control bg-light" name="other_names" value="" required="" autocomplete="other_names" disabled>
 
 
                    </div>
                  </div>
 
                  <div class="form-group row">
-                  <label for="email" class="col-md-2">Address</label>
+                  <label for="address" class="col-md-2">Address</label>
 
                   <div class="col-md-8">
                     <input id="address" type="address" class="form-control bg-light" name="address" value="" required="" autocomplete="address" disabled>
