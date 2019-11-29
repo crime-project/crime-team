@@ -86,10 +86,10 @@
 
 
 
-                <div class="form-group row">
+               <div class="form-group row">
                     <label for="password" class="col-md-4 col-form-label text-md-right">Description</label>
 
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="form-group">
 
                           <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
@@ -99,11 +99,22 @@
               </div>
 
 
+               <!-- <div class="form-group row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                       <label for="password" class="text-md-right">Description</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea3" rows="6"></textarea>
+                    </div>
+
+                  </div>
+                </div>-->
+
+
 
               <div class="form-group row mb-0">
-                <div class="col-md-6 offset-md-9">
+                <div class="col-md-6 offset-md-10">
 
-                  <h4><button type="button" class="btn btn-info rounded">
+                  <h4><button type="button" class="btn btn-info rounded pt-2 pb-2 pl-4 pr-4">
 
                     Submit
                 </button></h4>
@@ -111,55 +122,11 @@
         </div>
 
 
- <div class="container">
-    <div class="row">
-        <div class='col-sm-4'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1' name="datetimepicker1">
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-          /*  $(function () {
-                $('#datetimepicker1').datetimepicker();
-            }); */
-
-             jQuery(function () {
-    $('#datetimepicker1').datetimepicker({
-        defaultDate: moment(),
-        sideBySide: true
-        });
-});
-
-</script>
-    </div>
-</div>
-
-
-
     </form>
 </div>
 </div>
 <!-- </div>-->
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
 </div>
 
 
