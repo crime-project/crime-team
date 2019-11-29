@@ -21,6 +21,13 @@
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
 
+                                <div class="form-group row">
+                                    <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_own_name" value="{{ old('item_own_name') }}" required autocomplete="item_own_name" autofocus>
+                                    </div>
+                                </div>
 
                                 <div class="form-group row">
                                     <label for="item_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Name ') }}</label>
@@ -30,13 +37,6 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
-
-                                    <div class="col-md-6">
-                                        <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_own_name" value="{{ old('item_own_name') }}" required autocomplete="item_own_name" autofocus>
-                                    </div>
-                                </div>
 
                                 <div class="form-group row">
                                     <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('address') }}</label>

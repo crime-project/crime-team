@@ -40,7 +40,7 @@
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>Full Name</th>
+									<th>Item Owner Name</th>
 									<th>Item Name</th>
 									<th>Address</th>
 									<th>Phone Number</th>
@@ -51,7 +51,7 @@
 							</thead>
 							<tfoot>
 								<tr>
-									<th>Full Name</th>
+									<th>Item Owner Name</th>
 									<th>Item Name</th>
 									<th>Address</th>
 									<th>Phone Number</th>
@@ -65,7 +65,7 @@
 
 							<tr>
 								<td></td>
-								<td>Phone </td>
+								<td>Item </td>
 								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>

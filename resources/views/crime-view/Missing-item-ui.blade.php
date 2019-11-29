@@ -204,10 +204,10 @@
 
 
                   <div class="form-group row">
-                    <label for="name" class="col-md-2">Full Name </label>
+                    <label for="item_own_name" class="col-md-2">Item Owner Name </label>
 
                     <div class="col-md-8">
-                     <input id="own_name" type="text" class="form-control bg-light" name="own_name" value="" required="" autocomplete="own_name" disabled>
+                     <input id="item_own_name" type="text" class="form-control bg-light" name="item_own_name" value="" required="" autocomplete="item_own_name" disabled>
 
 
                    </div>
@@ -223,6 +223,16 @@
                    </div>
                  </div>
 
+                <div class="form-group row">
+                  <label for="address" class="col-md-2">Address</label>
+
+                  <div class="col-md-8">
+                    <input id="address" type="address" class="form-control bg-light" name="address" value="" required="" autocomplete="address" disabled>
+
+
+                  </div>
+                </div>
+
                   <div class="form-group row">
                     <label for="phone_number" class="col-md-2">Phone Number </label>
 
@@ -232,16 +242,6 @@
 
                    </div>
                  </div>
-
-                 <div class="form-group row">
-                  <label for="email" class="col-md-2">Address</label>
-
-                  <div class="col-md-8">
-                    <input id="address" type="address" class="form-control bg-light" name="address" value="" required="" autocomplete="address" disabled>
-
-
-                  </div>
-                </div>
 
 
                 <div class="form-group row">
