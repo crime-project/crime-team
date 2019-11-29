@@ -22,7 +22,7 @@
                                 @csrf
 
                                 <div class="form-group row">
-                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Full Name ') }}</label>
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Criminal Full Name ') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="cri_full_name" type="text" class="form-control @error('cri_full_name') is-invalid @enderror" name="cri_full_name" value="{{ old('cri_full_name') }}" required autocomplete="cri_full_name" autofocus>
@@ -38,10 +38,10 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('address') }}</label>
+                                    <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="email">
+                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address">
 
                                         
                                     </div>
@@ -62,8 +62,6 @@
                                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                         </div>
                                     </div>
-
-                                    
                                 </div>
                             </div>
 
