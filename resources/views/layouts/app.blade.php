@@ -18,12 +18,11 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <!--dashboaed links-->
-    <link rel="apple-touch-icon" href="apple-icon.png">
+   <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -170,10 +169,13 @@ $('li.dropdown-alert').hover(function() {
     <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
     <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
     <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-
-
-
 <!--dashboaed-js-links-end-->
+
+
+
+
+
+
 
  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
