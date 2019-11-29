@@ -61,7 +61,15 @@ class Crimecontroller extends Controller
     }
     public function criminal()
     {
+         return view('crime-view.most-wanted-criminals');   
+    }
+    public function criminalstable()
+    {
          return view('crime-view.most-wanted-criminals-table');   
+    }
+        public function criminalsui()
+    {
+         return view('crime-view.most-wanted-criminals-ui');   
     }
 
 

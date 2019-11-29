@@ -40,11 +40,9 @@
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>Owner Name</th>
-									<th>Model Number</th>
-									<th>Number Plate</th>
+									<th>Full Name</th>
+									<th>Other Names</th>
 									<th>Address</th>
-									<th>Phone Number</th>
 									<th>Image</th>
 									<th>Description</th>
 									<th>Action</th>
@@ -52,12 +50,10 @@
 							</thead>
 							<tfoot>
 								<tr>
-									<th></th>
-									<th>Owner Name</th>
-									<th>Model Number</th>
-									<th>Number Plate</th>
+									<th>#</th>
+									<th>Full Name</th>
+									<th>Other Names</th>
 									<th>Address</th>
-									<th>Phone Number</th>
 									<th>Image</th>
 									<th>Description</th>
 									<th>Action</th>
@@ -68,9 +64,7 @@
 
 							<tr>
 								<td></td>
-								<td>Owner </td>
-								<td>Brand </td>
-								<td>Brand </td>
+								<td>Criminal </td>
 								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>
@@ -81,8 +75,6 @@
 
 								<tr>
 								<td></td>
-								<td>Brand </td>
-								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>
