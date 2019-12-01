@@ -50,3 +50,7 @@ Route::get('/most-wanted-criminals-table', 'Crimecontroller@criminalstable');
 Route::get('/most-wanted-criminals-ui', 'Crimecontroller@criminalsui');
 
 Route::get('/most-wanted-criminals', 'Crimecontroller@criminal');
+
+Route::get('/crime-reporting', 'Crimecontroller@crimereporting');
+
+Route::get('/date-time', 'Crimecontroller@datetime');
