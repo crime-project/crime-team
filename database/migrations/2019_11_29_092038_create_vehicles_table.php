@@ -22,6 +22,8 @@ class CreateVehiclesTable extends Migration
             $table->string('no_plate');
             $table->string('Image');
             $table->string('description');
+
+            $table->timestamps();
         });
     }
 

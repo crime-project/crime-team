@@ -26,6 +26,8 @@ class CreateReportedcrimesTable extends Migration
             $table->string('evidence');
             $table->string('crime_description');
 
+            $table->timestamps();
+
         });
     }
 

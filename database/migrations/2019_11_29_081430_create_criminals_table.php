@@ -22,6 +22,8 @@ class CreateCriminalsTable extends Migration
             $table->string('gender');
             $table->string('Image');
             $table->string('description');
+
+            $table->timestamps();
             
         });
     }

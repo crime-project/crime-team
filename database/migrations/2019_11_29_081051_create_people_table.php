@@ -21,6 +21,8 @@ class CreatePeopleTable extends Migration
             $table->string('gender');
             $table->string('image');
             $table->string('description');
+
+            $table->timestamps();
             
         });
     }
