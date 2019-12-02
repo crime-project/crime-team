@@ -25,9 +25,9 @@ Route::get('/', 'Crimecontroller@dashboard');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/missing-persons', 'Crimecontroller@persons');
+Route::get('/missing-persons', 'PeopleController@index');
 
-Route::get('/missing-person-table', 'Crimecontroller@persontable');
+Route::get('/missing-person-table', 'PeopleController@persontable')->name('show');
 
 Route::get('/missing-person-ui', 'Crimecontroller@personui');
 
@@ -53,11 +53,18 @@ Route::get('/most-wanted-criminals-ui', 'Crimecontroller@criminalsui');
 
 Route::get('/most-wanted-criminals', 'Crimecontroller@criminal');
 
-<<<<<<< HEAD
+Route::get('/date-time', 'Crimecontroller@datetime');
 
-Route::resource('lostitem', 'itemController');
-=======
 Route::get('/crime-reporting', 'Crimecontroller@crimereporting');
 
-Route::get('/date-time', 'Crimecontroller@datetime');
->>>>>>> 1bfaac7eb9f0e92b7294bd32e848b01c480b1963
+
+//crud routs
+Route::resource('lostitem', 'itemController');
+
+
+Route::resource('people', 'PeopleController');
+
+
+
+
+
