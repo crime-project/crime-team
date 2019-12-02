@@ -53,5 +53,11 @@ Route::get('/most-wanted-criminals-ui', 'Crimecontroller@criminalsui');
 
 Route::get('/most-wanted-criminals', 'Crimecontroller@criminal');
 
+<<<<<<< HEAD
 
 Route::resource('lostitem', 'itemController');
+=======
+Route::get('/crime-reporting', 'Crimecontroller@crimereporting');
+
+Route::get('/date-time', 'Crimecontroller@datetime');
+>>>>>>> 1bfaac7eb9f0e92b7294bd32e848b01c480b1963
