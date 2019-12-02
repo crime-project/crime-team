@@ -33,7 +33,9 @@ Route::get('/missing-person-ui', 'Crimecontroller@personui');
 
 Route::get('/missing-items', 'Crimecontroller@items');
 
-Route::get('/missing-items-table', 'Crimecontroller@itemstable');
+//Route::get('/missing-items-table', 'Crimecontroller@itemstable')->name('itemstable');
+
+Route::get('/missing-items-table', 'itemController@index')->name('itemstable');
 
 Route::get('/missing-item-ui', 'Crimecontroller@itemui');
 
@@ -50,3 +52,6 @@ Route::get('/most-wanted-criminals-table', 'Crimecontroller@criminalstable');
 Route::get('/most-wanted-criminals-ui', 'Crimecontroller@criminalsui');
 
 Route::get('/most-wanted-criminals', 'Crimecontroller@criminal');
+
+
+Route::resource('lostitem', 'itemController');
