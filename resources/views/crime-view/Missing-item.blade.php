@@ -18,8 +18,10 @@
                         <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items') }}</div></strong></h4>
 
                         <div class="card-body">
-                            <form method="POST" action="{{ route('register') }}">
-                                @csrf
+
+                    <form method="post" action="/lostitem" enctype="multipart/form-data">
+                        {{csrf_field()}}
+
 
                                 <div class="form-group row">
                                     <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
@@ -69,7 +71,8 @@
                                         </div>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                            aria-describedby="inputGroupFileAddon01">
+                                            aria-describedby="inputGroupFileAddon01" name="cover_image">
+
                                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                         </div>
                                     </div>
@@ -86,7 +89,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                       
-                                      <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+                                      <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" name="description"></textarea>
                                   </div>
                                   
                               </div>
@@ -97,7 +100,7 @@
                           <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-9">
                                
-                              <h4><button type="button" class="btn btn-info rounded">
+                              <h4><button type="Submit" class="btn btn-info rounded">
 
                                 {{ __('Submit') }}
                             </button></h4>
