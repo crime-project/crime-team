@@ -14,7 +14,7 @@
 
 				<!-- Zero Configuration Table -->
 				<div class="panel panel-default">
-					<div class="panel-heading">user Details</div>
+					<div class="panel-heading">User Details</div>
 					<div class="panel-body">
 
 						<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
@@ -40,26 +40,18 @@
 							<thead>
 								<tr>
 									<th>#</th>
-									<th>Owner Name</th>
-									<th>Model Number</th>
-									<th>Number Plate</th>
-									<th>Address</th>
+									<th>Full Name</th>
 									<th>Phone Number</th>
-									<th>Image</th>
-									<th>Description</th>
+									<th>Email</th>
 									<th>Action</th>
 								</tr>
 							</thead>
 							<tfoot>
 								<tr>
-									<th></th>
-									<th>Owner Name</th>
-									<th>Model Number</th>
-									<th>Number Plate</th>
-									<th>Address</th>
+									<th>#</th>
+									<th>Full Name</th>
 									<th>Phone Number</th>
-									<th>Image</th>
-									<th>Description</th>
+									<th>Email</th>
 									<th>Action</th>
 								</tr>
 							</tr>
@@ -68,11 +60,7 @@
 
 							<tr>
 								<td></td>
-								<td>Owner </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
+								<td>Registered </td>
 								<td>Brand </td>
 								<td>Brand </td>
 								<td><a href=""><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
@@ -81,10 +69,6 @@
 
 								<tr>
 								<td></td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>
 								<td>Brand </td>

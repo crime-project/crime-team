@@ -196,7 +196,7 @@
 
                     <div class="card">
 
-                      <img class="card-img-top" src="/assets/images/cars.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="/assets/images/spy.jpg" alt="Card image cap">
 
                     </div>
                   </div>
