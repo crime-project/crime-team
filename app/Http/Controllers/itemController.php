@@ -71,7 +71,8 @@ class itemController extends Controller
     
     public function edit($id)
     {
-        //
+         $item = item::find($id);
+        return view('item.item-edit', compact('item','id'));
     }
 
     
