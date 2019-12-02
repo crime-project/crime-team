@@ -6,22 +6,20 @@
 
 <!-- Right Panel -->
 <div class="col-lg-8"> 
-   <!--<div id="right-panel" class="right-panel">-->
+
 
     <div class="container-fluid missing-item-container">
 
-  <!-- <div class="col-12">-->
-         <!--  <div class="container missing-item-container">-->
-            <!-- <div class="row justify-content-center">-->
-                 <!--<div class="col-md-10">-->
                     <div class="card missing-item">
                         <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items') }}</div></strong></h4>
 
                         <div class="card-body">
 
-                    <form method="post" action="/lostitem" enctype="multipart/form-data">
+                    <form method="post" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
                         {{csrf_field()}}
 
+
+                      
 
                                 <div class="form-group row">
                                     <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
@@ -107,9 +105,7 @@
                         </div>
                     </div>
                 </form>
-         <!--   </div>-->
-        <!-- </div>-->
-   <!-- </div>-->
+   
 </div>
 </div>
 </div>

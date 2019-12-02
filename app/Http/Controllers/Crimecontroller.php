@@ -72,6 +72,15 @@ class Crimecontroller extends Controller
          return view('crime-view.most-wanted-criminals-ui');   
     }
 
+    public function crimereporting()
+    {
+         return view('crime-view.crime-reportinga');   
+    }
 
+    public function datetime()
+    {
+         return view('crime-view.date-time');   
+    }
+    
 }
        
