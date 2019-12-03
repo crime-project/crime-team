@@ -12,8 +12,8 @@
                         <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Vehicles') }}</div></strong></h4>
 
                         <div class="card-body">
-                            <form method="POST" action="{{ route('register') }}">
-                                @csrf
+                            <form method="post" action="/lostvehicle" enctype="multipart/form-data">
+                        {{csrf_field()}}
 
                                 <div class="form-group row">
                                     <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Owner Name ') }}</label>
