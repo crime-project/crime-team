@@ -39,7 +39,7 @@ Route::get('/missing-item-ui', 'Crimecontroller@itemui');
 
 Route::get('/missing-vehicles', 'Crimecontroller@vehicles');
 
-Route::get('/missing-vehicles-table', 'Crimecontroller@vehiclestable');
+Route::get('/missing-vehicles-table', 'Crimecontroller@vehiclestable')->name('vehiclestable');
 
 Route::get('/missing-vehicle-ui', 'Crimecontroller@vehicleui');
 
@@ -57,13 +57,15 @@ Route::get('/crime-reporting', 'Crimecontroller@crimereporting');
 
 
 //crud routs
-//Route::resource('lostitem', 'itemController');
+Route::resource('lostitem', 'itemController');
 
 Route::get('lostitem-edit', 'itemController@edit');
 
+Route::get('lostitem-update/{id}', 'itemController@update');
+
 Route::resource('people', 'PeopleController');
 
-
+Route::post('lostvehicle', 'vehicleController@store');
 
 
 

@@ -16,7 +16,7 @@
                         <div class="card-body">
 
                     
-                        <form method="get" action="" enctype="multipart/form-data">
+                        <form method="get" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
                         {{csrf_field()}}
 
 
@@ -26,7 +26,7 @@
                                     <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_own_name" value="{{ old('item_own_name') }}" required autocomplete="item_own_name" autofocus>
+                                        <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_own_name" value="{{$item->owner_name}}" required autocomplete="item_own_name" autofocus>
                                     </div>
                                 </div>
 

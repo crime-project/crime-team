@@ -14,8 +14,8 @@ class vehicleController extends Controller
      */
     public function index()
     {
-         $vehicledata = vehicle::all()->toArray();
-        return view('crime-view.missing-vehicles-table', compact('vehicledata'));  
+        //$vehicledata = vehicle::all()->toArray();
+      //  return view('crime-view.missing-vehicles-table', compact('vehicledata'));  
     }
 
     /**
@@ -54,20 +54,22 @@ class vehicleController extends Controller
             $fileNameToStore = 'noimage.jpg';
         }
         
-           // dd($fileNameToStore);
+            
 
         $vehicles = new vehicle();
-        $vehicles->own_name = $request->own_name;
-        $vehicles->mod_number = $request->mod_number;
-        $vehicles->num_plate = $request->num_plate;
+        $vehicles->owner_name = $request->own_name;
         $vehicles->address = $request->address;
-        $vehicles->phone_number = $request->phone_number;
+        $vehicles->phone_no = $request->phone_number;
+        $vehicles->model_no = $request->mod_number;
+        $vehicles->no_plate = $request->num_plate;
         $vehicles->description = $request->description;
 
         $vehicles->image = $fileNameToStore;
        
-
+        //dd($vehicles);
        $vehicles->save();
+
+
 
          return redirect()->route('vehiclestable');
     }
@@ -91,8 +93,8 @@ class vehicleController extends Controller
      */
     public function edit($id)
     {
-        $vehicle = vehicle::find($id);
-        return view('vehicle.vehicle-edit', compact('vehicle','id'));
+        //$vehicle = vehicle::find($id);
+       // return view('vehicle.vehicle-edit', compact('vehicle','id'));
     }
 
     /**

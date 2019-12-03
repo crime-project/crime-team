@@ -36,7 +36,7 @@
                                     <label for="num_plate" class="col-md-4 col-form-label text-md-right">{{ __('Number Plate') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="num_plate" type="number" class="form-control @error('num_plate') is-invalid @enderror" name="email" value="{{ old('num_plate') }}" required autocomplete="num_plate">
+                                        <input id="num_plate" type="number" class="form-control @error('num_plate') is-invalid @enderror" name="num_plate" value="{{ old('num_plate') }}" required autocomplete="num_plate">
 
                                         
                                     </div>
@@ -75,7 +75,7 @@
                                         </div>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                            aria-describedby="inputGroupFileAddon01">
+                                            aria-describedby="inputGroupFileAddon01" name="cover_image">
                                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                         </div>
                                     </div>
@@ -92,7 +92,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                       
-                                      <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+                                      <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" name="description"></textarea>
                                   </div>
                                   
                               </div>
@@ -103,7 +103,7 @@
                           <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-9">
                                
-                              <h4><button type="button" class="btn btn-info rounded">
+                              <h4><button type="submit" class="btn btn-info rounded">
 
                                 {{ __('Submit') }}
                             </button></h4>
