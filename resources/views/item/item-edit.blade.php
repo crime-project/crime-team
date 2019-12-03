@@ -15,7 +15,8 @@
 
                         <div class="card-body">
 
-                    <form method="post" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
+                    
+                        <form method="get" action="" enctype="multipart/form-data">
                         {{csrf_field()}}
 
 

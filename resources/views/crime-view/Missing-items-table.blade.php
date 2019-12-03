@@ -78,9 +78,9 @@
 								<td border=3 height=10 width=1000>{{$row['description']}}</td>
 					
 
-								<!--<td>{{$row['description']}}</td>-->
+								<td>{{$row['description']}}</td>
 								
-								<td><a href=""><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
+								<td><a href="lostitem-edit"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 									<a href="" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 								</tr>
 								@endforeach	
