@@ -64,35 +64,27 @@
 								</tr>
 							</tr>
 						</tfoot>
-						<tbody>
-
+							<tbody>
 							<tr>
+								@foreach($itemdata as $row)
+
 								<td></td>
-								<td>Owner </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
+								<td>{{$row['owner_name']}}</td>
+								<td>{{$row['model_no']}}</td>
+								<td>{{$row['no_plate']}}</td>
+								<td>{{$row['address']}}</td>
+								<td>{{$row['phone_no']}}</td>
+								<td><img src='$row['Image']'/></td>
+								<td border=3 height=10 width=1000>{{$row['description']}}</td>
+					
+
+								<!--<td>{{$row['description']}}</td>-->
+								
 								<td><a href=""><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 									<a href="" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 								</tr>
-
-								<tr>
-								<td></td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td>Brand </td>
-								<td><a href=""><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
-									<a href="" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
-								</tr>
-
-
+								@endforeach	
+							
 							</tbody>
 						</table>						
 					</div>
