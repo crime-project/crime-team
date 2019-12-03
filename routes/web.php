@@ -61,10 +61,9 @@ Route::get('/crime-reporting', 'Crimecontroller@crimereporting');
 //crud routs
 Route::resource('lostitem', 'itemController');
 
-
 Route::resource('people', 'PeopleController');
 
-
+Route::resource('lostvehicle', 'vehicleController');
 
 
 
