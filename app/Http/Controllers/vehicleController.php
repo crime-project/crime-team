@@ -14,8 +14,10 @@ class vehicleController extends Controller
      */
     public function index()
     {
-        //$vehicledata = vehicle::all()->toArray();
-      //  return view('crime-view.missing-vehicles-table', compact('vehicledata'));  
+     //  $vehicledata = vehicle::all()->toArray();
+      // return view('crime-view.missing-vehicles-table', compact('vehicledata'));  
+
+       return view('crime-view.missing-vehicles-table');
     }
 
     /**

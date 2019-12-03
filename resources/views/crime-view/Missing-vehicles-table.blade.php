@@ -66,7 +66,7 @@
 						</tfoot>
 							<tbody>
 							<tr>
-								@foreach($itemdata as $row)
+								@foreach($vehicledata as $row)
 
 								<td></td>
 								<td>{{$row['owner_name']}}</td>

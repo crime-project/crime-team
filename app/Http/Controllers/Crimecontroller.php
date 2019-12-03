@@ -33,7 +33,7 @@ class Crimecontroller extends Controller
 
          public function vehiclestable()
     {
-         return view('crime-view.missing-vehicles-table');   
+        // return view('crime-view.missing-vehicles-table');   
     }
 
      public function vehicleui()
