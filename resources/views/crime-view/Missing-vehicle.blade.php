@@ -16,7 +16,7 @@
                         {{csrf_field()}}
 
                                 <div class="form-group row">
-                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Owner Name ') }}</label>
+                                    <label for="own_name" class="col-md-4 col-form-label text-md-right">{{ __('Owner Name ') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="own_name" type="text" class="form-control @error('own_name') is-invalid @enderror" name="own_name" value="{{ old('own_name') }}" required autocomplete="own_name" autofocus>
@@ -36,7 +36,7 @@
                                     <label for="num_plate" class="col-md-4 col-form-label text-md-right">{{ __('Number Plate') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="num_plate" type="number" class="form-control @error('num_plate') is-invalid @enderror" name="email" value="{{ old('num_plate') }}" required autocomplete="num_plate">
+                                        <input id="num_plate" type="number" class="form-control @error('num_plate') is-invalid @enderror" name="num_plate" value="{{ old('num_plate') }}" required autocomplete="num_plate">
 
                                         
                                     </div>
@@ -46,7 +46,7 @@
                                     <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="address" type="email" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="email">
+                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address">
 
                                         
                                     </div>
@@ -103,7 +103,7 @@
                           <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-9">
                                
-                              <h4><button type="button" class="btn btn-info rounded">
+                              <h4><button type="Submit" class="btn btn-primary rounded">
 
                                 {{ __('Submit') }}
                             </button></h4>

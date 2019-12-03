@@ -57,13 +57,12 @@ class vehicleController extends Controller
            // dd($fileNameToStore);
 
         $vehicles = new vehicle();
-        $vehicles->own_name = $request->own_name;
-        $vehicles->mod_number = $request->mod_number;
-        $vehicles->num_plate = $request->num_plate;
+        $vehicles->owner_name = $request->own_name;
         $vehicles->address = $request->address;
-        $vehicles->phone_number = $request->phone_number;
+        $vehicles->phone_no = $request->phone_number;
+        $vehicles->no_plate = $request->num_plate;      
+        $vehicles->model_no = $request->mod_number;
         $vehicles->description = $request->description;
-
         $vehicles->image = $fileNameToStore;
        
 
