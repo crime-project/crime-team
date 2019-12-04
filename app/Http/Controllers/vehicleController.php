@@ -14,10 +14,9 @@ class vehicleController extends Controller
      */
     public function index()
     {
-     //  $vehicledata = vehicle::all()->toArray();
-      // return view('crime-view.missing-vehicles-table', compact('vehicledata'));  
+       $vehicledata = vehicle::all()->toArray();
+       return view('crime-view.missing-vehicles-table', compact('vehicledata'));  
 
-       return view('crime-view.missing-vehicles-table');
     }
 
     /**
@@ -27,15 +26,10 @@ class vehicleController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+   
     public function store(Request $request)
     {
         // Handle File Upload

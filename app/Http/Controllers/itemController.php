@@ -20,7 +20,6 @@ class itemController extends Controller
         //
     }
 
-   
      
     public function store(Request $request)
     {

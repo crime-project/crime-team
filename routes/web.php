@@ -65,7 +65,7 @@ Route::get('lostitem-update/{id}', 'itemController@update');
 
 Route::resource('people', 'PeopleController');
 
-Route::post('lostvehicle', 'vehicleController@store');
+//Route::post('lostvehicle', 'vehicleController@store');
 
-
+Route::resource('lostvehicle', 'vehicleController');
 
