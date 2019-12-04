@@ -69,3 +69,4 @@ Route::resource('people', 'PeopleController');
 
 Route::resource('lostvehicle', 'vehicleController');
 
+Route::get('lostvehicle-edit', 'vehicleController@edit');

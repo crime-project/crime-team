@@ -89,8 +89,8 @@ class vehicleController extends Controller
      */
     public function edit($id)
     {
-        //$vehicle = vehicle::find($id);
-       // return view('vehicle.vehicle-edit', compact('vehicle','id'));
+        $vehicle = vehicle::find($id);
+       return view('vehicle.vehicle-edit', compact('vehicle','id'));
     }
 
     /**
@@ -102,7 +102,36 @@ class vehicleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+                 // Handle File Upload
+        if($request->hasFile('cover_image')){
+            // Get filename with the extension
+            $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('cover_image')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore= $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore); 
+
+        $vehicles = vehicle::find($id); 
+        $vehicles->owner_name = $request->own_name;
+        $vehicles->address = $request->address;
+        $vehicles->phone_no = $request->phone_number;
+        $vehicles->model_no = $request->mod_number;
+        $vehicles->no_plate = $request->num_plate;
+        $vehicles->description = $request->description;
+
+
+        if($request->hasFile('cover_image')){
+            $vehicles->cover_image = $fileNameToStore;
+        } 
+  
+        $vehicles->save();
+
+        return redirect()->route('show');
+        }
     }
 
     /**
