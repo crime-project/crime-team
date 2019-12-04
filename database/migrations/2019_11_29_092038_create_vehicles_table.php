@@ -20,7 +20,7 @@ class CreateVehiclesTable extends Migration
             $table->integer('phone_no');
             $table->string('model_no');
             $table->string('no_plate');
-            $table->string('Image');
+            $table->string('image');
             $table->string('description');
 
             $table->timestamps();

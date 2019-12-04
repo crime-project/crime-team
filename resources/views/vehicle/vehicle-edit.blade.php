@@ -70,7 +70,7 @@
                                         </div>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                            aria-describedby="inputGroupFileAddon01" name="cover_image">
+                                            aria-describedby="inputGroupFileAddon01" name="image">
 
                                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                         </div>

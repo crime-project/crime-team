@@ -74,7 +74,11 @@
 								<td>{{$row['no_plate']}}</td>
 								<td>{{$row['address']}}</td>
 								<td>{{$row['phone_no']}}</td>
-								<td><img src='$row['Image']'/></td>
+								<td><img class="card-img-top"
+                             src="{{url($image->image? 'uploads/'.$image->image:'images/{{$row['image']}}')}}"
+                             alt="{{$image->description}}" width="100%" height="180px"/></td>
+								<!--<td>{{$row['image']}}</td>
+								<td><img src='$row['Image']'/></td> -->
 								<td border=3 height=10 width=1000>{{$row['description']}}</td>
 					
 
