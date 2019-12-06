@@ -4,6 +4,9 @@
 
 @include('layouts.dash-panal')
 
+<link rel="stylesheet" href="https://mode.github.io/alamode/alamode.min.css">
+<script src="https://mode.github.io/alamode/alamode.min.js"></script>
+
 <div class="content-wrapper">
 	<div class="container-fluid">
 
@@ -17,7 +20,7 @@
 					<div class="panel-heading">Item Details</div>
 					<div class="panel-body">
 
-						<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+						<table id="table_54f226026ff5" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 
 								<div class="row">
 						<div class="col-sm-6">
@@ -74,7 +77,12 @@
 								<td>{{$row['address']}}</td>
 								<td>{{$row['phone_no']}}</td>
 								<td>{{$row['item_name']}}</td>
-								<td><img src='$row['Image']'/></td>
+								<!--<td>{{$row['Image']}}</td>-->
+								<!--<td><img src="/assets/images/shining-3182654_1920.jpg"></td>-->
+							<td><img src='img/".$row[Image].".jpg' style='width:175px;height:75px;'/></td>
+								
+
+
 								<td border=3 height=10 width=1000>{{$row['description']}}</td>
 					
 
@@ -101,9 +109,23 @@
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
   </ul>
 </nav>
+
+
+<script>
+
+alamode.customizeTable([{
+  vizId: 'table_54f226026ff5',
+  addImages: {
+    columnNames: ['image'],
+    rowHeightOverride: 100
+  }
+}])
+
+</script>
+
 </div>
 
 <script src="vendors/jquery/dist/jquery.min.js"></script>
-     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 
 @endsection
