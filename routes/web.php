@@ -61,7 +61,7 @@ Route::resource('lostitem', 'itemController');
 
 Route::get('lostitem-edit', 'itemController@edit');
 
-Route::get('lostitem-update/{id}', 'itemController@update');
+Route::post('lostitem-update/{id}', 'itemController@update');
 
 Route::resource('people', 'PeopleController');
 
@@ -69,3 +69,9 @@ Route::resource('people', 'PeopleController');
 
 Route::resource('lostvehicle', 'vehicleController');
 
+Route::get('lostvehicle-edit/{id}', 'vehicleController@edit');
+
+Route::post('lostvehicle-update/{id}', 'vehicleController@update');
+
+Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::post('/profile/update', 'ProfileController@updateProfile')->name('profile.update');
