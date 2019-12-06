@@ -35,7 +35,7 @@
                                     <label for="item_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Name ') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="item_name" type="text" class="form-control @error('item_name') is-invalid @enderror" name="item_name" value="{{ old('item_name') }}" required autocomplete="item_name" autofocus>
+                                        <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_name" value="{{ old('item_name') }}" required autocomplete="item_name" autofocus>
                                     </div>
                                 </div>
 
@@ -52,11 +52,11 @@
                                 <div class="form-group row">
                                     <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
-                                    <div class="col-md-6">
-                                        <input id="phone_number" type="tel" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" required autocomplete="phone_number">
-
-                                        
+                                     <div class="col-md-6">
+                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="email">
                                     </div>
+
+                                  
                                 </div>
 
 

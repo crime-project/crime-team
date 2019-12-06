@@ -75,6 +75,8 @@ class itemController extends Controller
         $item = item::find($id);
         return view('item.item-edit', compact('item','id'));
 
+        
+
     } 
 
     
@@ -106,6 +108,8 @@ class itemController extends Controller
         } 
   
         $items->save();
+
+        
 
         return redirect()->route('show');
         }

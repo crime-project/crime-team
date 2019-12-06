@@ -78,17 +78,15 @@
 								<td>{{$row['phone_no']}}</td>
 								<td>{{$row['item_name']}}</td>
 								<!--<td>{{$row['Image']}}</td>-->
-								<!--<td><img src="/assets/images/shining-3182654_1920.jpg"></td>-->
-							<td><img src='img/".$row[Image].".jpg' style='width:175px;height:75px;'/></td>
+								
+						<td><img src='img/{{$row['Image']}}.jpg' style='width:175px;height:75px;'/></td>  
 								
 
 
-								<td border=3 height=10 width=1000>{{$row['description']}}</td>
-					
-
+								<!--<td border=3 height=10 width=1000>{{$row['description']}}</td>-->
 								<td>{{$row['description']}}</td>
-								
-								<td><a href="lostitem-edit"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
+							
+								<td><a href="{{action('itemController@edit', $row['id'])}}"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 									<a href="" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 								</tr>
 								@endforeach	

@@ -59,9 +59,9 @@ Route::get('/crime-reporting', 'Crimecontroller@crimereporting');
 //crud routs
 Route::resource('lostitem', 'itemController');
 
-Route::get('lostitem-edit', 'itemController@edit');
+//Route::get('lostitem-edit', 'itemController@edit');
 
-Route::post('lostitem-update/{id}', 'itemController@update');
+//Route::post('lostitem-update/{id}', 'itemController@update');
 
 Route::resource('people', 'PeopleController');
 

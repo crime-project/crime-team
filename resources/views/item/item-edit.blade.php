@@ -2,8 +2,6 @@
 
 @section('content')
 
-@include('layouts.dash-panal')
-
 <!-- Right Panel -->
 <div class="col-lg-8"> 
 
@@ -11,19 +9,19 @@
     <div class="container-fluid missing-item-container">
 
                     <div class="card missing-item">
-                        <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items') }}</div></strong></h4>
+                        <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items edit') }}</div></strong></h4>
 
                         <div class="card-body">
 
                     
-                        <form method="get" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
+                        <form method="post" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
                         {{csrf_field()}}
 
 
                       
 
                                 <div class="form-group row">
-                                    <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
+                                    <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{__('Item Owner Name ') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_own_name" value="{{$item->owner_name}}" required autocomplete="item_own_name" autofocus>
@@ -34,7 +32,7 @@
                                     <label for="item_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Name ') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="item_name" type="text" class="form-control @error('item_name') is-invalid @enderror" name="item_name" value="{{ old('item_name') }}" required autocomplete="item_name" autofocus>
+                                        <input id="item_name" type="text" class="form-control @error('item_name') is-invalid @enderror" name="item_name" value="{{$item->item_name}}" required autocomplete="item_name" autofocus>
                                     </div>
                                 </div>
 
@@ -43,7 +41,7 @@
                                     <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('address') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="email">
+                                        <input id="address" type="text" name="address" class="form-control @error('address') is-invalid @enderror" name="address" value="{{$item->address}}" required autocomplete="email">
                                     </div>
                                 </div>
 
@@ -51,12 +49,14 @@
                                 <div class="form-group row">
                                     <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
+                                  
                                     <div class="col-md-6">
-                                        <input id="phone_number" type="tel" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" required autocomplete="phone_number">
-
-                                        
+                                        <input id="address" type="text" name="phone_number" class="form-control @error('address') is-invalid @enderror" name="address" value="{{$item->phone_no}}" required autocomplete="email">
                                     </div>
                                 </div>
+
+
+                              
 
 
 
@@ -70,7 +70,7 @@
                                         </div>
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                            aria-describedby="inputGroupFileAddon01" name="cover_image">
+                                            aria-describedby="inputGroupFileAddon01" name="cover_image" value="{{$item->image}}">
 
                                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                         </div>
@@ -88,7 +88,9 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                       
-                                      <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" name="description"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea3" type="textarea" rows="7" name="description" value="{{$item->description}}"></textarea>
+
+                                     <!--  <textarea id="exampleFormControlTextarea3" type="text" name="description" class="form-control @error('address') is-invalid @enderror" name="address" value="{{$item->description}}" required autocomplete="email"></textarea>-->
                                   </div>
                                   
                               </div>
