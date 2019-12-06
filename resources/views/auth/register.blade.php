@@ -61,15 +61,13 @@
                             </div>
                         </div>
 
-                                        <div class="form-group row">
-                                            <label for="profile_image" class="col-md-4 col-form-label text-md-right">Profile Image</label>
-                                            <div class="col-md-6">
-                                                <input id="profile_image" type="file" class="form-control" name="profile_image">
-                                                @if (auth()->user()->image)
-                                                    <code>{{ auth()->user()->image }}</code>
-                                                @endif
-                                            </div>
-                                        </div>
+                        <div class="form-group row">
+                            <label for="profile_image" class="col-md-4 col-form-label text-md-right">{{ __('Profile Image') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="profile_image" type="file" class="form-control" name="profile_image" value="{{ old('profile_image') }}">
+                            </div>
+                        </div>
 
 
                         <div class="form-group row mb-0">
