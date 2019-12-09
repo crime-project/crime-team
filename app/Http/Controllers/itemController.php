@@ -73,7 +73,7 @@ class itemController extends Controller
     {
      
         $item = item::find($id);
-        return view('item.item-edit', compact('item','id'));
+        return view('crime-view.item-edit', compact('item','id'));
 
         
 
@@ -107,11 +107,14 @@ class itemController extends Controller
             $items->cover_image = $fileNameToStore;
         } 
   
+            dd(student::find($id));
+
         $items->save();
 
-        
 
-        return redirect()->route('show');
+
+        //return redirect()->route('show');
+        return view('data added');
         }
 
     }

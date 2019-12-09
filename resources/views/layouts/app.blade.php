@@ -86,25 +86,7 @@
   </div>
 
 
-
-
-
-
-<script type="text/javascript">
-$('li.dropdown-alert').hover(function() {
-  $(this).find('.dynamic-drop').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dynamic-drop').stop(true, true).delay(200).fadeOut(500);
-});
-</script>
-
-
-
-
                 <!--costom nav end-->
-
-
-
 
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -167,6 +149,8 @@ Right Panel-->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+
+ 
 
     <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
     <script src="assets/js/dashboard.js"></script>

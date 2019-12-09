@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@include('layouts.dash-panal')
 
 <!-- Right Panel -->
 <div class="col-lg-8"> 
@@ -14,7 +15,7 @@
                         <div class="card-body">
 
                     
-                        <form method="post" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
+                        <form method="get" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
                         {{csrf_field()}}
 
 
@@ -90,7 +91,7 @@
                                       
                                 <textarea class="form-control" id="exampleFormControlTextarea3" type="textarea" rows="7" name="description" value="{{$item->description}}"></textarea>
 
-                                     <!--  <textarea id="exampleFormControlTextarea3" type="text" name="description" class="form-control @error('address') is-invalid @enderror" name="address" value="{{$item->description}}" required autocomplete="email"></textarea>-->
+                                    
                                   </div>
                                   
                               </div>
@@ -115,8 +116,8 @@
 </div><!-- /#right-panel -->
 
 
-<script src="vendors/jquery/dist/jquery.min.js"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--<script src="vendors/jquery/dist/jquery.min.js"></script>
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>-->
 </main>
 </div>
 

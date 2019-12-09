@@ -81,6 +81,11 @@ class Crimecontroller extends Controller
     {
          return view('crime-view.date-time');   
     }
+
+    public function crimtable()
+    {
+        return view('item.test-item');
+    }
     
 }
        
