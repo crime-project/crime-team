@@ -7,12 +7,27 @@
 <!-- Right Panel -->
 <div class="col-lg-8"> 
 
-    <div class="container-fluid missing-vechicle-container">       
-                    <div class="card missing-vechicle">
-                        <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Vehicles') }}</div></strong></h4>
+<!--<div id="right-panel" class="right-panel">-->
+
+    <div class="container-fluid missing-item-container">
+
+  <!-- <div class="col-12">-->
+         <!--  <div class="container missing-item-container">-->
+            <!-- <div class="row justify-content-center">-->
+                 <!--<div class="col-md-10">-->
+                    <div class="card missing-item">
+                        <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items') 
+
+
+
+
+
+
+                        }}</div></strong></h4>
 
                         <div class="card-body">
-                            <form method="post" action="/lostvehicle" enctype="multipart/form-data">
+
+                    <form method="post" action="/lostitem" enctype="multipart/form-data">
                         {{csrf_field()}}
 
                                 <div class="form-group row">
@@ -76,6 +91,7 @@
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile01"
                                             aria-describedby="inputGroupFileAddon01" name="cover_image">
+
                                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                         </div>
                                     </div>
