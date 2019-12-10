@@ -54,7 +54,7 @@ class itemController extends Controller
 
         $items->image = $fileNameToStore;
        
-            
+
        $items->save();
 
          return redirect()->route('itemstable');
@@ -123,7 +123,7 @@ class itemController extends Controller
    
     public function destroy($id)
     {
-         $items =  item::find($id);  
+         $items = item::find($id);  
          $items->delete();
         return redirect()->route('itemstable');
     }

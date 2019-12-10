@@ -91,10 +91,16 @@
 
 									<!--<a href="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a>-->
 
-									<form method="post" class="delete_form" action="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i>
+							<form method="post" class="delete_form" action="{{action('itemController@destroy', $row['id'])}}">
+
+								
+								<button type="submit" class ="btn btn-danger">Delete<i class="fa fa-close"></i></button>
+
+								
 									{{csrf_field()}}
 
-									<input type="hidden" name="_method" value="Delete"/>	
+									<input type="hidden" name="_method" value="Delete"/>
+									<!--<button type="submit" class ="btn btn-danger">Delete</button>-->	
 									
 									</form>
 
@@ -123,15 +129,21 @@
 
 
 <script>
+$(document).ready(function(){
+	$('.delete_form').on('submit', function()
+	{
 
-alamode.customizeTable([{
-  vizId: 'table_54f226026ff5',
-  addImages: {
-    columnNames: ['image'],
-    rowHeightOverride: 100
-  }
-}])
+		if(confirm("Are you sure to delete?"))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 
+	});
+});
 </script>
 
 </div>
