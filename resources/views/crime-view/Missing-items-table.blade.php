@@ -88,8 +88,19 @@
 							
 								<td><a href="{{action('itemController@edit', $row['id'])}}"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 
+
+									<!--<a href="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a>-->
+
+									<form method="post" class="delete_form" action="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i>
+									{{csrf_field()}}
+
+									<input type="hidden" name="_method" value="Delete"/>	
 									
-									<a href="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
+									</form>
+
+
+
+								</td>
 								</tr>
 								@endforeach	
 							

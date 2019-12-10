@@ -53,7 +53,7 @@
                                     <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
                                      <div class="col-md-6">
-                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="email">
+                                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="phone_number" value="{{ old('address') }}" required autocomplete="email">
                                     </div>
 
                                   

@@ -54,7 +54,7 @@ class itemController extends Controller
 
         $items->image = $fileNameToStore;
        
-
+            
        $items->save();
 
          return redirect()->route('itemstable');
