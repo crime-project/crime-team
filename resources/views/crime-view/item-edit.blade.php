@@ -63,7 +63,7 @@
                                 <div class="form-group row">
                                     <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Image') }}</label>
 
-                                    <div class="col-md-6">
+                                   <!-- <div class="col-md-6">
                                         <div class="input-group">
                                           <div class="input-group-prepend">
                                             <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
@@ -77,7 +77,10 @@
                                     </div>
 
                                     
-                                </div>
+                                </div>-->
+                                <div class="col-md-6">
+                            <input name="cover_image" type="file" value="{{$item->image}}">
+                        </div>
                             </div>
 
 
@@ -85,10 +88,12 @@
                             <div class="form-group row">
                                 <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
 
-                                <div class="col-md-6">
+                                <div class="col-md-8">
                                     <div class="form-group">
                                       
-                                <textarea class="form-control" id="exampleFormControlTextarea3" type="textarea" rows="7" name="description" value="{{$item->description}}"></textarea>
+                             <!--<textarea class="form-control" id="exampleFormControlTextarea3" type="textarea" rows="7" name="description" <?php echo $item->description?> ></textarea>-->
+
+                              <textarea name="description" class="form-control" type="textarea" rows="7"> <?php echo $item->description?> </textarea>
 
                                     
                                   </div>
