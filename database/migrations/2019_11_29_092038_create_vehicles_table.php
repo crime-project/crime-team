@@ -16,16 +16,17 @@ class CreateVehiclesTable extends Migration
         Schema::create('vehicles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('owner_name');
-            $table->string('address');
-            $table->integer('phone_no');
             $table->string('model_no');
             $table->string('no_plate');
-            $table->string('image');
+            $table->string('address');
+            $table->integer('phone_no');
+            $table->string('Image');
             $table->string('description');
 
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
