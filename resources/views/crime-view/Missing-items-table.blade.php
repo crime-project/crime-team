@@ -91,16 +91,19 @@
 
 									<!--<a href="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a>-->
 
-							<form method="post" class="delete_form" action="{{action('itemController@destroy', $row['id'])}}">
+							<form method="post" id="myform" class="delete_form" action="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');">
 
 								
-								<button type="submit" class ="btn btn-danger">Delete<i class="fa fa-close"></i></button>
-
 								
+
+								<a href="javascript: submit();"><i class="fa fa-close"></i></a>
+								
+
+
 									{{csrf_field()}}
 
 									<input type="hidden" name="_method" value="Delete"/>
-									<!--<button type="submit" class ="btn btn-danger">Delete</button>-->	
+										
 									
 									</form>
 
@@ -127,9 +130,14 @@
   </ul>
 </nav>
 
+<script type="text/javascript">
+	function submit()
+      {
+         document.forms["myform"].submit();
+      }
 
-<script>
-$(document).ready(function(){
+
+     $(document).ready(function(){
 	$('.delete_form').on('submit', function()
 	{
 
@@ -145,6 +153,9 @@ $(document).ready(function(){
 	});
 });
 </script>
+
+
+
 
 </div>
 
