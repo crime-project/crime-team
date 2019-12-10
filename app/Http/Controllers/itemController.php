@@ -76,7 +76,6 @@ class itemController extends Controller
         return view('crime-view.item-edit', compact('item','id'));
 
         
-
     } 
 
     
@@ -96,32 +95,36 @@ class itemController extends Controller
             // Upload Image
             $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore); 
 
-        $items =  student::find($id);      
-       $items->owner_name = $request->item_own_name;
+        $items =  item::find($id);      
+        $items->owner_name = $request->item_own_name;
         $items->address = $request->address;
         $items->phone_no = $request->phone_number;
         $items->item_name = $request->item_name;
         $items->description = $request->description;
 
+
+
         if($request->hasFile('cover_image')){
-            $items->cover_image = $fileNameToStore;
+            $items->Image = $fileNameToStore;
         } 
   
-            dd(student::find($id));
+           //dd($items);
 
         $items->save();
 
 
 
-        //return redirect()->route('show');
-        return view('data added');
+        return redirect()->route('itemstable');
+        //return view('data added');
         }
 
-    }
+    } 
 
    
     public function destroy($id)
     {
-        //
+         $items =  item::find($id);  
+         $items->delete();
+        return redirect()->route('itemstable');
     }
 }

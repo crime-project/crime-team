@@ -15,12 +15,11 @@
                         <div class="card-body">
 
                     
-                        <form method="get" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
+                        <form method="post" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
                         {{csrf_field()}}
 
-
+                      <input type="hidden" name="_method" value="PATCH"/>
                       
-
                                 <div class="form-group row">
                                     <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{__('Item Owner Name ') }}</label>
 
@@ -116,8 +115,8 @@
 </div><!-- /#right-panel -->
 
 
-<!--<script src="vendors/jquery/dist/jquery.min.js"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>-->
+<script src="{{ asset('vendors/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('vendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 </main>
 </div>
 

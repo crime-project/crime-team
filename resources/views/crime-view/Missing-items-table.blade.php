@@ -87,7 +87,9 @@
 								<td>{{$row['description']}}</td>
 							
 								<td><a href="{{action('itemController@edit', $row['id'])}}"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
-									<a href="" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
+
+									
+									<a href="{{action('itemController@destroy', $row['id'])}}" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 								</tr>
 								@endforeach	
 							
