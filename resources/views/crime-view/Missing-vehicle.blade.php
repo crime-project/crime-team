@@ -27,7 +27,7 @@
 
                         <div class="card-body">
 
-                    <form method="post" action="/lostitem" enctype="multipart/form-data">
+                    <form method="post" action="/lostvehicle" enctype="multipart/form-data">
                         {{csrf_field()}}
 
                                 <div class="form-group row">

@@ -4,6 +4,9 @@
 
 @include('layouts.dash-panal')
 
+<link rel="stylesheet" href="https://mode.github.io/alamode/alamode.min.css">
+<script src="https://mode.github.io/alamode/alamode.min.js"></script>
+
 <div class="content-wrapper">
 	<div class="container-fluid">
 
@@ -12,12 +15,13 @@
 
 				<h2 class="page-title pt-3">Missing Vehicles</h2><br>
 
+
 				<!-- Zero Configuration Table -->
 				<div class="panel panel-default">
 					<div class="panel-heading">Vehicle Details</div>
 					<div class="panel-body">
 
-						<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+						<table id="table_54f226026ff5" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 
 								<div class="row">
 						<div class="col-sm-6">
@@ -50,9 +54,11 @@
 									<th>Action</th>
 								</tr>
 							</thead>
-							<tfoot>
+
+						
+						<tfoot>
 								<tr>
-									<th></th>
+									<th>#</th>
 									<th>Owner Name</th>
 									<th>Model Number</th>
 									<th>Number Plate</th>
@@ -62,8 +68,9 @@
 									<th>Description</th>
 									<th>Action</th>
 								</tr>
-							</tr>
 						</tfoot>
+					
+					
 							<tbody>
 							<tr>
 								@foreach($vehicledata as $row)
@@ -74,22 +81,18 @@
 								<td>{{$row['no_plate']}}</td>
 								<td>{{$row['address']}}</td>
 								<td>{{$row['phone_no']}}</td>
-								<td>
- @if (auth()->user()->image)
-            <img src="{{ asset(auth()->user()->image) }}" style="width: 40px; height: 40px; border-radius: 50%;">
-        @endif
-
-									<!--<img class="card-img-top"
-                             src="{{url($image->image? 'uploads/'.$image->image:'images/{{$row['image']}}')}}"
-                             alt="{{$image->description}}" width="100%" height="180px"/></td>
-								<td>{{$row['image']}}</td>
-								<td><img src='$row['Image']'/></td> -->
-								<td border=3 height=10 width=1000>{{$row['description']}}</td>
-					
-
-								<!--<td>{{$row['description']}}</td>-->
 								
-								<td><a href=""><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
+								
+								<!--<td>{{$row['Image']}}</td>-->
+								
+						<td><img src='img/{{$row['Image']}}.jpg' style='width:175px;height:75px;'/></td>  
+								
+
+
+								<!--<td border=3 height=10 width=1000>{{$row['description']}}</td>-->
+								<td>{{$row['description']}}</td>
+							
+								<td><a href="{{action('vehicleController@edit', $row['id'])}}"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
 									<a href="" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 								</tr>
 								@endforeach	
@@ -110,11 +113,23 @@
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
   </ul>
 </nav>
+
+
+<script>
+
+alamode.customizeTable([{
+  vizId: 'table_54f226026ff5',
+  addImages: {
+    columnNames: ['image'],
+    rowHeightOverride: 100
+  }
+}])
+
+</script>
+
 </div>
 
-
-
 <script src="vendors/jquery/dist/jquery.min.js"></script>
-     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 
 @endsection
