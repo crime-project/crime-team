@@ -130,7 +130,7 @@ class vehicleController extends Controller
   
         $vehicles->save();
 
-        return redirect()->route('show');
+        return redirect()->route('vehiclestable');
         }
     }
 
@@ -142,6 +142,8 @@ class vehicleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $vehicles = vehicle::find($id);  
+         $vehicles->delete();
+        return redirect()->route('vehiclestable');
     }
 }

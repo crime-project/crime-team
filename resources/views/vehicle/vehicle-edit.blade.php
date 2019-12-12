@@ -8,12 +8,13 @@
 <div class="col-lg-8"> 
 
 
-    <div class="container-fluid missing-item-container">
+    <div class="container-fluid missing-vehicle-container">
 
-                    <div class="card missing-item">
+                    <div class="card vehicle-item">
                         <h4><strong><div class="card-header text-center bg-info">{{ __('Missing Items') }}</div></strong></h4>
 
                         <div class="card-body">
+
 
                     
                         <form method="get" action="{{action('itemController@update', $id)}}" enctype="multipart/form-data">
@@ -23,12 +24,13 @@
                       
 
                                 <div class="form-group row">
-                                    <label for="item_own_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Owner Name ') }}</label>
+                                    <label for="own_name" class="col-md-4 col-form-label text-md-right">{{ __('Owner Name ') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="item_own_name" type="text" class="form-control @error('item_own_name') is-invalid @enderror" name="item_own_name" value="{{$item->owner_name}}" required autocomplete="item_own_name" autofocus>
+                                        <input id="own_name" type="text" class="form-control @error('own_name') is-invalid @enderror" name="own_name" value="{{ old('own_name') }}" required autocomplete="own_name" autofocus>
                                     </div>
                                 </div>
+
 
                                 <div class="form-group row">
                                     <label for="item_name" class="col-md-4 col-form-label text-md-right">{{ __('Item Name ') }}</label>
