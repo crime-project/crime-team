@@ -70,15 +70,19 @@
 					
 							<tbody>
 							<tr>
-								-@foreach($itemdata as $row)
+								@foreach($itemdata as $row)
 
 								<td></td>
 								<td>{{$row['owner_name']}}</td>
 								<td>{{$row['address']}}</td>
 								<td>{{$row['phone_no']}}</td>
 								<td>{{$row['item_name']}}</td>
-								<!--<td>{{$row['Image']}}</td>-->
+								<!--<td><a href="#">{{$row['Image']}}View</a></td>-->
+
 								
+								
+								<td><img src="{{ asset('storage/app/public/cover_images/' . $row['Image'] )}}" width="100%"></td>
+
 
 								
 
@@ -86,8 +90,8 @@
 								
 
 								
-						<td><img src='img/{{$row['Image']}}.jpg' style='width:175px;height:75px;'/></td>  
-								
+						
+					
 								<td>{{$row['description']}}</td>
 							
 								<td><a href="{{action('itemController@edit', $row['id'])}}"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
@@ -165,3 +169,6 @@
  <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 
 @endsection
+
+
+

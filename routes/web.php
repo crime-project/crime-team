@@ -80,3 +80,7 @@ Route::post('/profile/update', 'ProfileController@updateProfile')->name('profile
 
 
 Route::get('/item-table', 'Crimecontroller@crimtable');
+
+
+Route::get('/crimetest', 'Crimecontroller@crimetest');
+

@@ -64,7 +64,7 @@ class itemController extends Controller
      
     public function show($id)
     {
-        //
+        
     }
 
     

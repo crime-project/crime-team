@@ -63,23 +63,8 @@
                                 <div class="form-group row">
                                     <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Image') }}</label>
 
-                                   <!-- <div class="col-md-6">
-                                        <div class="input-group">
-                                          <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                                        </div>
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                            aria-describedby="inputGroupFileAddon01" name="cover_image" value="{{$item->image}}">
-
-                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                        </div>
-                                    </div>
-
-                                    
-                                </div>-->
                                 <div class="col-md-6">
-                            <input name="cover_image" type="file" value="{{$item->image}}">
+                            <input name="cover_image" type="file" value="{{$item->Image}}">
                         </div>
                             </div>
 

@@ -49,7 +49,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm clearfix">
             <div class="container">
                <!-- <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}

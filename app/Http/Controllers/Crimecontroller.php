@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\item;
+
 
 class Crimecontroller extends Controller
 {
@@ -87,5 +89,20 @@ class Crimecontroller extends Controller
         return view('item.test-item');
     }
     
+     public function crimetest()
+    {
+     
+        $connect = mysqli_connect("localhost", "root", "", "crime_reporting");
+     
+
+       $query = mysqli_query( $connect, "SELECT * FROM items");
+
+        $number=mysqli_num_rows($query);
+
+        echo "Total records in Student table= ". $number;
+
+    
+    }
+
 }
        
